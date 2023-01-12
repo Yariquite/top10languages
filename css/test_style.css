@@ -1,0 +1,483 @@
+*{padding: 0; margin: 0; border: 0;}
+*, *::before, *::after{-moz-box-sizing:border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+:focus, :active{outline: none;}
+a:focus, a:active{outline: none;}
+nav, footer, header, aside{display: block;}
+html, body{height: 100%; width: 100%; font-size: 100%; line-height: 100%; font-size: 14px; -ms-text-size-adjust: 100%;}
+input, button, textarea {font-family: inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding: 0; border: 0;}
+a, a :visited {text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: inherit;} 
+
+/* Light */
+@font-face {
+    font-family: 'San Francisco Pro';
+    src: local('San Francisco Pro Display Light'), local('San-Francisco-Pro-Display-Light'),
+        url('../fonts/SFProDisplay-Light/') format('woff2'),
+        url('../fonts/SFProDisplay-Light/SFProDisplay-Light.woff') format('woff'),
+        url('../fonts/SFProDisplay-Light/SFProDisplay-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+/* Heavy */
+@font-face {
+    font-family: 'San Francisco Pro';
+    src: local('San Francisco Pro Display Heavy'), local('San-Francisco-Pro-Display-Heavy'),
+        url('../fonts/SFProDisplay-Heavy/SFProDisplay-Heavy.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Heavy/SFProDisplay-Heavy.woff') format('woff'),
+        url('../fonts/SFProDisplay-Heavy/SFProDisplay-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }
+/* Bold */
+@font-face {
+    font-family: 'San Francisco Pro';
+    src: local('San Francisco Pro Display Bold'), local('San-Francisco-Pro-Display-Bold'),
+        url('../fonts/SFProDisplay-Bold/SFProDisplay-Bold.woff2') format('woff2'),
+        url('../fontsfonts/SFProDisplay-Bold/SFProDisplay-Bold.woff') format('woff'),
+        url('../fontsfonts/SFProDisplay-Bold/SFProDisplay-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+/* Medium */
+@font-face {
+    font-family: 'San Francisco Pro';
+    src: local('San Francisco Pro Display Medium'), local('San-Francisco-Pro-Display-Medium'),
+        url('../fonts/SFProDisplay-Medium/') format('woff2'),
+        url('../fonts/SFProDisplay-Medium/SFProDisplay-Medium.woff') format('woff'),
+        url('../fonts/SFProDisplay-Medium/SFProDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+/* Regular */
+@font-face 
+ {
+    font-family: 'San Francisco Pro';
+    src: local('San Francisco Pro Display Regular'), local('San-Francisco-Pro-Display-Regular'),
+        url('../fonts/SFProDisplay-Regular/') format('woff2'),
+        url('../fonts/SFProDisplay-Regular/SFProDisplay-Regular.woff') format('woff'),
+        url('../fonts/SFProDisplay-Regular/SFProDisplay-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+body {
+    /* background: url(../img/3d_img\ копія.png) repeat; */
+    /* padding-top: 40px; */
+    background-color: black;
+
+}
+[class*='block']
+{
+    width: 100%;
+    height: 100px;
+    background: rgb(255, 255, 255);
+}
+
+/* лого */
+.logo_block{
+    background: rgb(255, 255, 255);   
+    color: black;
+    width: 88%;
+    height: auto;
+    float: left;
+    border-radius: 4px 0 0 0;
+
+    /* font-family: 'San Francisco Pro';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px;
+    line-height: 61px;
+    padding: 40px 0 0 40px; */
+}
+
+.logo_block p {
+    font-family: 'San Francisco Pro';
+    font-weight: 300;
+    font-stretch: normal;
+    font-size: 15px;
+    line-height: 16px;
+    padding: 40px 20px 0 40px;
+}
+.logo_block p:first-child{
+    font-family: 'San Francisco Pro';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px;
+    line-height: 61px;
+    padding: 40px 0 0 40px;
+}
+.logo_block:first-child p:last-child{
+    margin-bottom: 250px;
+}
+/* .lang_block.lang_block:{} */
+
+/* Навігація */
+.nav_block{
+    color: black;
+    width: 12%;
+    height: auto;
+    background: rgb(158, 156, 156);   
+    margin-left: 88%;
+    position: sticky;
+    top: 0%;
+    border-radius: 0 0px 4px 0;
+
+    font-family: 'San Francisco Pro';
+    font-weight: 900;
+    font-style: normal;
+    padding: 10px 0 10px 10px;
+    margin-bottom: 11px;
+    font-size: 25px;
+    line-height: 26px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav_block p{
+    margin: 20px 0 20px 0;
+}
+.nav_block p:first-child{ 
+    margin-top: 14px;
+}
+.nav_block p:last-child {
+    /* margin-top: 10px; */
+    /* margin-bottom: 14.5px; */
+    padding-bottom: 10px;
+}
+
+.wrapper {
+    max-width: 1300px;
+    height: 7800px;
+    margin: 0 40px  0 40px;
+}
+a {
+	color: rgb(255, 255, 255);
+}
+a:visited {
+	color: rgb(255, 247, 247);
+	text-decoration: none;
+}
+a:hover{
+	color: rgb(138, 135, 135);
+}
+
+.lang_block {
+    position: relative;
+    top: -200px;
+    right: 0;
+    width: 88%;
+    background: rgb(255, 255, 255);
+    height: auto;
+    float: left;
+    padding: 200px 40px 20px 40px;
+}
+.lang_block:first-child{
+    padding-top: 40px;
+}
+.lang_block li:last-child{
+    margin: 0 0 50px 0;
+}
+.lang_block:last-child li:last-child{
+    margin: 0 0 0 0;
+}
+
+h1 {
+    font-family: 'San Francisco Pro';
+    font-weight: 900;
+    font-style: normal;
+    font-size: 40px;
+    margin: 0 0 25px 0;
+}
+
+.lang_block p{
+    font-family: 'San Francisco Pro';
+    font-weight: 500;
+    font-style: normal;
+    margin: 20px 0 20px 0;
+}
+
+h2 {
+    font-family: 'San Francisco Pro';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    margin: 25px 0 25px 0;
+}
+li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'San Francisco Pro';
+    font-weight: 100;
+    font-style: normal;   
+}
+li::before {
+    content: '';
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    height: 0.5px;
+    width: 10px;
+    display: inline-block;
+    margin-right: 9px;
+    margin-bottom: 3px;
+}
+.p_about {
+    padding: 0 40px 0 0;
+}
+
+footer {
+    width: 100%;    
+    height: 200px;
+    font-family: 'San Francisco Pro';
+    font-weight: 100;
+    font-style: normal;
+    margin-right: 40px;
+}
+
+.main {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.contacts_lifecell {
+    display: table;
+}
+.lifecell {
+    position: relative;
+    width: 200px;
+    height: 30px;
+    padding-left: 30px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.lifecell::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 175px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/lifecell.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.contacts_kyivstar {
+    display: table;
+
+}
+.kyivstar {
+    position: relative;
+    width: 200px;
+    height: 30px;
+    padding-left: 30px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.kyivstar::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 175px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/kyivstar.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.contacts_vodafon{
+        display: table;
+}
+
+.vodafon{
+    position: relative;
+    width: 200px;
+    height: 30px;
+    padding-left: 30px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.vodafon::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 175px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/vodafon.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    display: table-cell;
+    vertical-align: middle;
+}
+span {
+    font-family: 'San Francisco Pro';
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+/* DEVELOPER */
+.developer_Twiiter {
+    display: table;
+}
+.Twiiter {
+    position: relative;
+    width: 200px;
+    height: 30px;
+    padding-left: 30px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.Twiiter::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 175px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/twitter.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.developer_Facebook {
+    display: table;
+
+}
+.Facebook {
+    position: relative;
+    width: 200px;
+    height: 30px;
+    padding-left: 30px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.Facebook::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 175px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/facebook.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.developer_Instagram{
+        display: table;
+}
+
+.Instagram{
+    position: relative;
+    width: 200px;
+    height: 30px;
+    padding-left: 30px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.Instagram::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 175px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/instagram.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.footer_end {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    /* align-items: flex-end; */
+    text-align: center;
+    justify-content: center;
+    opacity: 0.5;
+}
+
+.footer_end p {
+    font-family: 'San Francisco Pro';
+    font-weight: 100;
+    font-size: 10px;
+    width: 100%;
+    margin: 0;
+}
+.lang_block:last-child p {
+    font-family: 'San Francisco Pro';
+    font-weight: 100;
+    font-size: 15px;
+    color: black;
+    width: 100%;
+    margin: 0;
+    opacity: 0.8;
+}
+
+.lang_block:last-child {
+    background-color: rgb(178, 178, 178);
+    padding-top: 0px;
+}
+.content1 {
+    flex: 0 1 100%;
+}
+.content2 {
+    flex: 0 1 100%;
+}
+.content3 {
+    flex: 0 1 100%;
+}
+.content4 {
+    flex: 0 1 100%;
+}
+.content5 {
+    flex: 0 1 100%;
+}
+.content6 {
+    flex: 0 1 100%;
+}
+.content7 {
+    flex: 0 1 100%;
+}
+.content8 {
+    flex: 0 1 100%;
+}
+.content9 {
+    flex: 0 1 100%;
+}
+.content10 {
+    flex: 0 1 100%;
+}
+.developer span {
+    font-weight: 400;
+}
+
+
+h1 {
+    line-height: 41px;
+}
+h2{
+    line-height: 32px;
+}
